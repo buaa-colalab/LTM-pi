@@ -16,7 +16,7 @@ DreamDojo 或 CD-LAM 仓库。数据和模型权重不随源码发布。
 单张支持 BF16 的 NVIDIA GPU。
 
 ```bash
-git clone <repo-url> ltm_pi_robomme
+git clone https://github.com/buaa-colalab/LTM-pi.git ltm_pi_robomme
 cd ltm_pi_robomme
 python3.11 -m venv .venv
 source .venv/bin/activate

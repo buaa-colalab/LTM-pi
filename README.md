@@ -20,7 +20,7 @@ Linux, Python 3.11, and CUDA 12 are recommended. The full training configuration
 support.
 
 ```bash
-git clone <repo-url> ltm_pi_robomme
+git clone https://github.com/buaa-colalab/LTM-pi.git ltm_pi_robomme
 cd ltm_pi_robomme
 python3.11 -m venv .venv
 source .venv/bin/activate
