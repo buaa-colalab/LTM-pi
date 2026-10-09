@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/NVIDIA/DreamDojo.git",
+  "commit": "02f119b759d5c7f84a399fdeea3c6e82e7ed6cff",
+  "license": "Apache-2.0",
+  "vendored_paths": [
+    "external/lam/modules/__init__.py",
+    "external/lam/modules/blocks.py",
+    "external/lam/modules/embeddings.py",
+    "external/lam/modules/lam.py"
+  ],
+  "sha256": {
+    "external/lam/modules/__init__.py": "0606f4a5fa23219e01de2a449a9a29aa27ffdc5f983c1b5c699b720c2430f20a",
+    "external/lam/modules/blocks.py": "74003616e1f58caa8f071969655d8c92d74498981c44ea7c5e7f78223da427f9",
+    "external/lam/modules/embeddings.py": "b555a1b7d003a721a70547badfb8b74255b983e466cb58fb671903903a3f53d2",
+    "external/lam/modules/lam.py": "e5ebe59193e07bc217b0d51c81f4a07bb3f6eac6b94371009634aed71d40e85a"
+  }
+}

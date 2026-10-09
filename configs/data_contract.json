@@ -1,0 +1,34 @@
+{
+  "video_dataset": {
+    "codec": "h264",
+    "episodes": 16000,
+    "fps": 10,
+    "frames": 7636924,
+    "gop": 10,
+    "instruction_tasks": 134,
+    "maximum_episode_frames": 1800,
+    "videos": 32000,
+    "views": ["image", "wrist_image"]
+  },
+  "memory_cache": {
+    "alignment": "row_0_invalid_zero; row_i=z_mu(frame_i-1,frame_i), i>=1",
+    "encoder": "DreamDojo LAM 400k",
+    "checkpoint_format": "cdlam.stage1.inference",
+    "checkpoint_sha256": "12ce318e48d5790fb3773f1027edd5a3babe8965027b4957e3ed62d5d19fc386",
+    "latent_dim": 64,
+    "latent_dtype": "float32",
+    "latent_layout": "concat(image_z_mu[32],wrist_image_z_mu[32])",
+    "preprocess_version": "dreamdojo.lam400k.rgb_uint8.crop_4x3.resize_480x640.resize_240x320.v1",
+    "transition_frame_stride": 1,
+    "upstream_commit": "02f119b759d5c7f84a399fdeea3c6e82e7ed6cff",
+    "views": ["image", "wrist_image"]
+  },
+  "training": {
+    "action_horizon": 50,
+    "memory_horizon": 1800,
+    "memory_lag": 10,
+    "memory_prefix_order": "language_memory_vision",
+    "memory_same_prefix_block": false,
+    "max_token_len": 200
+  }
+}

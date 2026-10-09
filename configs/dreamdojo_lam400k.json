@@ -1,0 +1,29 @@
+{
+  "name": "DreamDojo LAM 400k",
+  "upstream_repository": "https://github.com/NVIDIA/DreamDojo.git",
+  "upstream_commit": "02f119b759d5c7f84a399fdeea3c6e82e7ed6cff",
+  "checkpoint_filename": "LAM_400k.ckpt",
+  "checkpoint_format": "dreamdojo.lightning",
+  "checkpoint_sha256": "d77bf1b307b6e6d0a2800a2636afee8223a7bf19f15a8583eebd3f8979f1c44f",
+  "model": {
+    "input_channels": 3,
+    "model_dim": 1024,
+    "latent_dim_per_view": 32,
+    "patch_size": 16,
+    "encoder_blocks": 24,
+    "decoder_blocks": 24,
+    "attention_heads": 16
+  },
+  "preprocessing": {
+    "input": "uint8_rgb",
+    "center_crop_aspect": "4:3",
+    "world_model_size": [480, 640],
+    "lam_size": [240, 320]
+  },
+  "cache": {
+    "views": ["image", "wrist_image"],
+    "layout": "concat(image_z_mu[32],wrist_image_z_mu[32])",
+    "storage_dtype": "float32",
+    "transition_frame_stride": 1
+  }
+}

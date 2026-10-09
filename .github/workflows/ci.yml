@@ -1,0 +1,22 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  code-checks:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install numpy==1.26.4
+      - run: bash -n bin/*.sh
+      - run: bin/release-check.sh
+      - run: python -m compileall -q src scripts tests third_party
+      - run: PYTHONPATH=src:. python -m unittest discover -s tests -v
+      - name: Reject generated artifacts
+        run: |
+          ! find . -type f \( -name '*.pyc' -o -name '*.log' \) | grep .

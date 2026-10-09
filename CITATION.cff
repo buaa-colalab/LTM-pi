@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the upstream OpenPI, DreamDojo, and RoboMME work."
+title: "LTM-Pi for RoboMME"
+type: software
+version: 1.1.0
+date-released: 2026-10-06
+license: Apache-2.0
+authors:
+  - name: "RoboMME contributors"

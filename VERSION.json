@@ -1,0 +1,15 @@
+{
+  "bundle_version": "1.1.0",
+  "created_at": "2026-10-06",
+  "source_commit": "2184bf8844ea9d205382c4aefa3a694311418251",
+  "upstream_repository": "https://github.com/Physical-Intelligence/openpi",
+  "config": "pi05_robomme_16x1000_dreamdojo_lmv_causal_fixedlag10_h50_default",
+  "experiment": "ltm_pi_robomme_dreamdojo_lam400k_videoh264_fixedlag10_h50_b128_v1",
+  "memory_lag": 10,
+  "max_token_len": 200,
+  "memory_same_prefix_block": false,
+  "memory_latent_dtype": "float32",
+  "memory_encoder": "DreamDojo LAM 400k",
+  "memory_encoder_sha256": "d77bf1b307b6e6d0a2800a2636afee8223a7bf19f15a8583eebd3f8979f1c44f",
+  "dreamdojo_commit": "02f119b759d5c7f84a399fdeea3c6e82e7ed6cff"
+}

@@ -1,0 +1,3 @@
+# Reproduces the validated Python 3.11 environment. Install this project with
+# `python -m pip install -e .`; this file is provided for tools that expect it.
+-e .
