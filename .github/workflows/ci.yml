@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: python -m pip install numpy==1.26.4
+      - run: python -m pip install numpy==1.26.4 pillow==11.2.1
       - run: bash -n bin/*.sh
       - run: bin/release-check.sh
       - run: python -m compileall -q src scripts tests third_party
