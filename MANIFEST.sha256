@@ -1,4 +1,4 @@
-332074fc18fb09f2a4521921b39a5fb71a0b080be307aaa963ee28662986ccab  ./.github/workflows/ci.yml
+4da198ea290bf4cd24d44fecebb8a1337f52cefe370034fdab8a1d88aab7c64c  ./.github/workflows/ci.yml
 b3cf4b7d9fca9af6b3775543e983a093defc24b01d3609fe5f95bb4880e5acd2  ./.gitignore
 75bd384d6a59f0d1057528158b388458a7dd648d11713412f3ded6341a23f4b9  ./CHANGELOG.md
 1acb5cb8f889c7ed4d372491d542657693deac8c30df9be609bb23ef5d8175f1  ./CITATION.cff
@@ -23,7 +23,7 @@ faf5ee94f69fc3ba35d1db7949d452396b8d3d543c12fb03db1bfc00a5f9c8c1  ./bin/validate
 28990145d5c7cac18f600278464c7b5f155be6a5b585061143131d9bc548219b  ./configs/paths.env.example
 015b8ba05573f441d22e1402c3aa19a46b9c69bd6c5f3c509c3c785cf162c5d4  ./docs/data-contract.md
 3d15cb3dc5b16bb3f405b805d22d9fe75274312a43e1ed5654ce9e75acbee8c5  ./docs/inference-protocol.md
-b04a911924651cfa9a73604dafe913bbe835d982a6e2cbaa92d5ecfc6a3d98c7  ./pyproject.toml
+2a5a075484366abf40dc9184d3acd63da51ac8d3dea8d0a32e5c5b2cbf9cf5aa  ./pyproject.toml
 6f9e323225b16981be9d090291987e661b2ea4d875460cf3822db5852c215440  ./requirements.txt
 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./scripts/__init__.py
 448f7909307cc31c2910788e95680367dccd77f3edbf416d4c97300b6eac3d6f  ./scripts/build_anchor_cache.py
