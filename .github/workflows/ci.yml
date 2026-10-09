@@ -17,6 +17,6 @@ jobs:
       - run: bin/release-check.sh
       - run: python -m compileall -q src scripts tests third_party
       - run: PYTHONPATH=src:. python -m unittest discover -s tests -v
-      - name: Reject generated artifacts
+      - name: Reject tracked generated artifacts
         run: |
-          ! find . -type f \( -name '*.pyc' -o -name '*.log' \) | grep .
+          ! git ls-files '*.pyc' '*.log' | grep .
