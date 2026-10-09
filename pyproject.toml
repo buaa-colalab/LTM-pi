@@ -8,6 +8,7 @@ license = { file = "LICENSE" }
 dependencies = [
     "av==17.0.0",
     "augmax==0.4.1",
+    "datasets<4",
     "dm-tree==0.1.9",
     "einops==0.8.1",
     "equinox==0.12.2",

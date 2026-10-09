@@ -208,7 +208,7 @@ def _sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def main(config_name: str, max_frames: int | None = None):
+def main(config_name: str, max_frames: int | None = None, output_dir: Path | None = None):
     config = _config.get_config(config_name)
     data_config = config.data.create(config.assets_dirs, config.model)
 
@@ -231,7 +231,11 @@ def main(config_name: str, max_frames: int | None = None):
     norm_stats = {key: stats.get_statistics() for key, stats in stats.items()}
     if data_config.asset_id is None:
         raise ValueError("Data config must define asset_id before normalization stats can be saved")
-    output_path = config.assets_dirs / data_config.asset_id
+    output_path = (
+        output_dir.expanduser().resolve()
+        if output_dir is not None
+        else config.assets_dirs / data_config.asset_id
+    )
     print(f"Writing stats to: {output_path}")
     normalize.save(output_path, norm_stats)
     if data_config.execution_only:

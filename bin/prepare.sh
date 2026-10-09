@@ -156,7 +156,8 @@ compute_norm_stats() {
   export OPENPI_NORM_NUM_WORKERS=${OPENPI_NORM_NUM_WORKERS:-8}
   PYTHONPATH="${BUNDLE_ROOT}/src:${BUNDLE_ROOT}" JAX_PLATFORMS=cpu CUDA_VISIBLE_DEVICES= \
     "${PY}" "${BUNDLE_ROOT}/scripts/compute_norm_stats.py" \
-    --config-name pi05_robomme_16x1000_dreamdojo_lmv_causal_fixedlag10_h50_default
+    --config-name pi05_robomme_16x1000_dreamdojo_lmv_causal_fixedlag10_h50_default \
+    --output-dir "${ROBOMME_ASSETS_ROOT}/${ASSET_ID}"
 }
 
 check_python

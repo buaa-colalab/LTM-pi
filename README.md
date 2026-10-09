@@ -138,6 +138,8 @@ The `memory` stage decodes frames from the H.264 `image` and `wrist_image` strea
 the video dataset, extracts a 32-D DreamDojo posterior mean from each view, and
 concatenates them into a 64-D FP32 cache. The `norm-stats` stage reads only the
 state/action columns from the same dataset's Parquet files and does not decode video.
+It writes directly to `${ROBOMME_ASSETS_ROOT}/${ROBOMME_ASSET_ID}`; no manual copy
+into the repository's `assets/` directory is needed.
 
 Validate the generated artifacts:
 

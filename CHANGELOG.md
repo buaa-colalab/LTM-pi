@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Allow Hatch direct-reference metadata and constrain `datasets` to the
+  LeRobot-compatible pre-4.x API.
+- Write generated normalization statistics directly to the configured
+  `ROBOMME_ASSETS_ROOT` used by training preflight.
+
 ## 1.1.0 - 2026-10-06
 
 - Rename the standalone release to `ltm_pi_robomme`.

@@ -128,7 +128,8 @@ bin/prepare.sh norm-stats
 
 `memory` 从 video 数据的 H.264 `image` 和 `wrist_image` 流解码帧，分别提取 32-D
 DreamDojo posterior mean，再拼接成 64-D FP32 cache；`norm-stats` 只读取同一数据集的
-parquet 状态/动作列，不解码视频。
+parquet 状态/动作列，不解码视频。输出会直接写入
+`${ROBOMME_ASSETS_ROOT}/${ROBOMME_ASSET_ID}`，无需再手动复制到仓库内的 `assets/`。
 
 生成完成后验证：
 
